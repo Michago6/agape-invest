@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Agape Invest</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       background-color: #34623F;
@@ -15,10 +18,35 @@
       text-align: center;
       padding: 1.5rem;
     }
+    .nav-wrapper {
+      width: 80%;
+      margin: 0 auto;
+      border-top: 1px solid #C5A159;
+      border-bottom: 1px solid #C5A159;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: transparent;
+    }
+    nav a {
+      flex: 1;
+      text-align: center;
+      padding: 1rem;
+      text-decoration: none;
+      color: black;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .current-nav-a {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
     .content-box {
       width: 80%;
       margin: 2rem auto; /* centers it horizontally and adds vertical spacing */
-      background-color: white;
+      background-color: #C5A159;
       padding: 2rem;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -32,7 +60,18 @@
   <div class ="header">
     <img height="150rem" src="images/agapeheart.png">
   </div>
-  <div class="content-box">
+
+  <div class="nav-wrapper">
+    <nav>
+      <a href="" class="current-nav-a">Hem</a>
+      <a href="#about">Om oss</a>
+      <a href="sub-websites/our-team.html">Vårt team</a>
+      <a href="sub-websites/expertise.html">Expertis</a>
+      <a href="sub-websites/contact.html">Kontakt</a>
+    </nav>
+  </div>
+
+  <div id="about" class="content-box">
     <h1>Agape Invest – Vår Vision, Vårt Varför & Vår Modell</h1>
     <h2>🎯 Vårt "Why" – Därför finns vi</h2>
 
@@ -88,115 +127,121 @@
       Alla entreprenörer börjar med steg 1, och kan sedan välja att gå vidare till steg 2 och 3 utifrån behov och överenskommelse.
     </p>
 
+    <h3>Steg 1 – Konsultation & Tillgång till Team (obligatorisk)</h3>
     <ul>
-      <li>Steg 1 – Konsultation & Tillgång till Team (obligatorisk)</li>
-      <ul>
-        <li>Entreprenören bokar en 1 timmes konsultation</li>
-        <li></li>
-        <li>Gratis för unga mellan 18–25 år</li>
-        <li>4000 kr/timme för individer över 26 år</li>
-        <li>Under mötet analyserar vi affärsidén, behoven och kartlägger vilka kompetenser som krävs för att företaget ska blomstra</li>
-        <li>Om det finns ömsesidigt intresse, får entreprenören tillgång till **Agape Invests operativa team, som fungerar som deras egna anställda</li>
-      </ul>
-      <p>
-        Vi löser alltså "personalfrågan" – utan att entreprenören behöver ha kapital för att anställa.
-        <br><br>
-        📌 Motprestation:
-        Entreprenören lämnar 10% av aktierna i sitt bolag (X AB) till Agape Invest.
-      </p>
+      <li>Entreprenören bokar en 1 timmes konsultation</li>
+      <li>Gratis för unga mellan 18–25 år</li>
+      <li>4000 kr/timme för individer över 26 år</li>
+      <li>Under mötet analyserar vi affärsidén, behoven och kartlägger vilka kompetenser som krävs för att företaget ska blomstra</li>
+      <li>Om det finns ömsesidigt intresse, får entreprenören tillgång till **Agape Invests operativa team, som fungerar som deras egna anställda</li>
+    </ul>
+    <p>
+      Vi löser alltså "personalfrågan" – utan att entreprenören behöver ha kapital för att anställa.
+      <br><br>
+      📌 Motprestation:
+      Entreprenören lämnar 10% av aktierna i sitt bolag (X AB) till Agape Invest.
+    </p>
 
-      <li>Steg 2 – Seedkapital (frivilligt)</li>
-      <ul>
-        <li>Agape Invest investerar mellan 25.000 kr – 100.000 kr i klientens företag</li>
-        <li>25.000 kr används ofta för att täcka grundläggande uppstartskostnader såsom registrering av aktiebolag</li>
-        <li>Investeringen är inte kopplad till procentsatsens storlek, utan alltid fast 20% ägarandel, oavsett om vi investerar 25.000 kr eller 100.000 kr</li>
-      </ul>
-      <p>
-        📌 Motprestation:
-        Agape Invest erhåller 20% av aktierna i bolaget
-        <br><br>
-        💡 Kapitalet används ofta till:
-      </p>
-      <ul>
-        <li>Bolagsbildning</li>
-        <li>Produktutveckling</li>
-        <li>Marknadsföring/testkampanjer</li>
-        <li>Plattformskostnader eller MVP</li>
-      </ul>
-
-
-
+    <h3>Steg 2 – Seedkapital (frivilligt)</h3>
+    <ul>
+      <li>Agape Invest investerar mellan 25.000 kr – 100.000 kr i klientens företag</li>
+      <li>25.000 kr används ofta för att täcka grundläggande uppstartskostnader såsom registrering av aktiebolag</li>
+      <li>Investeringen är inte kopplad till procentsatsens storlek, utan alltid fast 20% ägarandel, oavsett om vi investerar 25.000 kr eller 100.000 kr</li>
+    </ul>
+    <p>
+      📌 Motprestation:
+      Agape Invest erhåller 20% av aktierna i bolaget
+      <br><br>
+      💡 Kapitalet används ofta till:
+    </p>
+    <ul>
+      <li>Bolagsbildning</li>
+      <li>Produktutveckling</li>
+      <li>Marknadsföring/testkampanjer</li>
+      <li>Plattformskostnader eller MVP</li>
     </ul>
 
+    <h3>Steg 3 – Infrastruktur & Kontor (frivilligt)</h3>
+    <p>
+      Entreprenören får permanent tillgång till Agape Invests kontor, inklusive mötesrum, arbetsplatser och eventyta:
+      <br><br>
+      🕒 Tillgängligt: Måndag till fredag + söndagar
+      <br>
+      🕯️ Stängt på lördagar av respekt för Shabbat, i linje med vår grundares judiska tradition
+      <br><br>
+      📌 Motprestation:
+      <br>
+      Entreprenören lämnar 30% av aktierna i bolaget – men:
+      <br><br>
+      > Totalt ägande från Agape Invest i något bolag får aldrig överstiga 30%
+      <br>
+      > Detta för att entreprenören alltid ska behålla majoritetsägande och autonomi.
+      <br><br>
+      📈 Förvärvsstrategi – Skala upp existerande företag
+      <br><br>
+      Förutom att arbeta med startups, letar Agape Invest även efter etablerade företag som är till salu eller i behov av förändring.
+      <br><br>
+      Vårt mål är att:
+      <ul>
+        <li>Köpa in oss i eller förvärva bolag med outnyttjad potential</li>
+        <li>Skala upp dessa genom vår kompetens och nätverk</li>
+        <li>Tiofaldiga deras lönsamhet genom effektivisering, ny strategi och kulturförändring</li>
+      </ul>
 
+    </p>
 
+    <h2>
+      👥 Ungdomsprogram – Framtidens nätverk
+    </h2>
 
+    <p>
+      Vi erbjuder ett kostnadsfritt medlemskap för unga mellan 13–19 år.
+      <br><br>
+      🗓️ Varje söndag får ungdomar besöka Agape Invests kontor för att:
+      <ul>
+        <li>Se hur ett företag fungerar</li>
+        <li>Lära sig om företagskultur, entreprenörskap och investeringar</li>
+        <li>Bygga relationer med våra grundare, investerare och team</li>
+      </ul>
+      📚 Syftet är utbildning, inspiration och socialt kapital – inte lön.
+      Unga med relevanta färdigheter kan bidra till projekt och bygga portfölj och erfarenhet.
+    </p>
 
+    <h2>
+      🤝 Filosofi & Villkor
+    </h2>
 
-    🔹 Steg 3 – Infrastruktur & Kontor (frivilligt)
+    <ul>
+      <li>Agape Invest agerar alltid som partner, inte ägare</li>
+      <li>Vi kräver årlig utdelning utifrån ägarandel (10%, 20%, 30%)</li>
+      <li>Detta säkrar kassaflöde för att investera i nya startups</li>
+      <li>Vi gör en exit om entreprenören visar bristande engagemang</li>
+      <li>Om entreprenören planerar att sälja sitt bolag, har Agape Invest förtur att köpa deras andel – om vi tror på fortsatt tillväxt</li>
+    </ul>
 
-    Entreprenören får permanent tillgång till Agape Invests kontor, inklusive mötesrum, arbetsplatser och eventyta:
+    <h2>
+      🧭 Våra Värderingar
+    </h2>
 
-    🕒 Tillgängligt: Måndag till fredag + söndagar
-    🕯️ Stängt på lördagar av respekt för Shabbat, i linje med vår grundares judiska tradition
+    <ul>
+      <li>Självständighet: Grundarna ska alltid äga majoriteten av sitt bolag</li>
+      <li>Transparens: Allt sker i samråd, aldrig ensidigt</li>
+      <li>Hållbarhet: Vi bygger långsiktiga och etiskt förankrade bolag</li>
+      <li>Tillit: Vi tror på människor före affärsplaner</li>
+      <li>Gemenskap: Vi bygger ett nätverk – inte bara ett bolagsportfölj</li>
+    </ul>
 
-    📌 Motprestation:
-    Entreprenören lämnar 30% av aktierna i bolaget – men:
+    <h2>
+      👤 Ledning
+    </h2>
+    <ul>
+      <li>Christian Concha Silbiger – Grundare & Direktör</li>
+      <li>Felix Misha Luka Magnusson – VD & Medgrundare</li>
+    </ul>
 
-    > Totalt ägande från Agape Invest i något bolag får aldrig överstiga 30%
-    > Detta för att entreprenören alltid ska behålla majoritetsägande och autonomi.
-
-    📈 Förvärvsstrategi – Skala upp existerande företag
-
-    Förutom att arbeta med startups, letar Agape Invest även efter etablerade företag som är till salu eller i behov av förändring.
-
-    Vårt mål är att:
-
-        • Köpa in oss i eller förvärva bolag med outnyttjad potential
-        • Skala upp dessa genom vår kompetens och nätverk
-        • Tiofaldiga deras lönsamhet genom effektivisering, ny strategi och kulturförändring
-
-    👥 Ungdomsprogram – Framtidens nätverk
-
-    Vi erbjuder ett kostnadsfritt medlemskap för unga mellan 13–19 år.
-
-    🗓️ Varje söndag får ungdomar besöka Agape Invests kontor för att:
-
-        • Se hur ett företag fungerar
-        • Lära sig om företagskultur, entreprenörskap och investeringar
-        • Bygga relationer med våra grundare, investerare och team
-
-    📚 Syftet är utbildning, inspiration och socialt kapital – inte lön.
-    Unga med relevanta färdigheter kan bidra till projekt och bygga portfölj och erfarenhet.
-
-
-
-
-
-
-
-    🤝 Filosofi & Villkor
-
-        • Agape Invest agerar alltid som partner, inte ägare
-        • Vi kräver årlig utdelning utifrån ägarandel (10%, 20%, 30%)
-      – Detta säkrar kassaflöde för att investera i nya startups
-        • Vi gör en exit om entreprenören visar bristande engagemang
-        • Om entreprenören planerar att sälja sitt bolag, har Agape Invest förtur att köpa deras andel – om vi tror på fortsatt tillväxt
-
-    🧭 Våra Värderingar
-
-        • Självständighet: Grundarna ska alltid äga majoriteten av sitt bolag
-        • Transparens: Allt sker i samråd, aldrig ensidigt
-        • Hållbarhet: Vi bygger långsiktiga och etiskt förankrade bolag
-        • Tillit: Vi tror på människor före affärsplaner
-    Gemenskap: Vi bygger ett nätverk – inte bara ett bolagsportfölj
-
-    👤 Ledning
-
-        • Christian Concha Silbiger – Grundare & Direktör
-        • Felix Misha Luka Magnusson – VD & Medgrundare
-
-    OhhhhYeahhh *stönljud* FUCK ME DADDY!!! 😀
+    <h2>
+      OhhhhYeahhh *stönljud* FUCK ME DADDY!!! 😀
+    </h2>
 
 
 
@@ -204,5 +249,24 @@
 
   </div>
 
+  <script>
+    window.addEventListener("load", function() {
+      // Check if the URL contains #about
+      if (window.location.hash === "#gotoabout") {
+        // Prevent the default instant scroll to #about
+        window.scrollTo(0, 0);
+  
+        // Wait 0.5 seconds before scrolling to #about
+        setTimeout(function() {
+          const targetElement = document.getElementById("about");
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 500); // 500 milliseconds (0.5 seconds)
+      }
+    });
+  </script>
 </body>
+
+
 </html>

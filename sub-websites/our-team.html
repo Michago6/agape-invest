@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agape Invest</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      background-color: #34623F;
+      /* background-color: #B68F40; */
+      font-family: sans-serif;
+    }
+    .header {
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .nav-wrapper {
+      width: 80%;
+      margin: 0 auto;
+      border-top: 1px solid #C5A159;
+      border-bottom: 1px solid #C5A159;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: transparent;
+    }
+    nav a {
+      flex: 1;
+      text-align: center;
+      padding: 1rem;
+      text-decoration: none;
+      color: black;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .current-nav-a {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .content-box {
+      width: 80%;
+      margin: 2rem auto; /* centers it horizontally and adds vertical spacing */
+      background-color: #C5A159;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <!--<header>Agape Invest</header>-->
+  <div class ="header">
+    <img height="150rem" src="../images/agapeheart.png">
+  </div>
+
+  <div class="nav-wrapper">
+    <nav>
+      <a href="../index.html">Hem</a>
+      <a href="../index.html#gotoabout" id="scroll-link">Om oss</a>
+      <a href="" class="current-nav-a">Vårt team</a>
+      <a href="expertise.html">Expertis</a>
+      <a href="contact.html">Kontakt</a>
+    </nav>
+  </div>
+
+  <div id="about" class="content-box">
+    <h1>
+      Vårt team
+    </h1>
+
+  </div>
+
+</body>
+</html>
