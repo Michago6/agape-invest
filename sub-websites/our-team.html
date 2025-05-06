@@ -56,56 +56,57 @@
     }
     /* card boxes */
     .card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: space-between;
-}
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: space-between;
+    }
 
-.image-frame {
-  position: relative;
-  width: 50%; /* Image will take up 50% of the card's width */
-  height: 60%; /* Image will take up 60% of the card's height */
-  overflow: hidden; /* Ensures the zoomed part of the image gets clipped */
-  display: flex;
-  justify-content: center; /* Horizontally centers the image */
-  align-items: center; /* Vertically centers the image */
-  margin: 0 auto; /* Ensure the image-frame itself is centered within the card */
-}
+    .image-frame {
+      position: relative;
+      width: 50%; /* Image will take up 50% of the card's width */
+      height: 60%; /* Image will take up 60% of the card's height */
+      overflow: hidden; /* Ensures the zoomed part of the image gets clipped */
+      display: flex;
+      justify-content: center; /* Horizontally centers the image */
+      align-items: center; /* Vertically centers the image */
+      margin: 0 auto; /* Ensure the image-frame itself is centered within the card */
+    }
 
-.card {
-  flex: 1 1 calc(33.333% - 1rem);
-  background-color: white;
-  padding: 1rem;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  box-sizing: border-box;
-  text-align: center;
-  border-radius: 8px;
-}
+    .card {
+      flex: 1 1 calc(33.333% - 1rem);
+      background-color: white;
+      padding: 1rem;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      box-sizing: border-box;
+      text-align: center;
+      border-radius: 8px;
+      min-width: 20rem;
+      min-height: 40rem;
+    }
 
-.card img {
-  width: 100%; /* The image will take up 100% of the image-frame */
-  height: 100%; /* The image will take up 100% of the image-frame height */
-  object-fit: cover; /* Ensures the image covers the entire area */
-  object-position: 60% 20%;  /* Adjust the focal point of the image */
-  transform: scale(2.2); /* Default zoom level */
-  transition: transform 0.3s ease;
-}
+    .card img {
+      width: 100%; /* The image will take up 100% of the image-frame */
+      height: 100%; /* The image will take up 100% of the image-frame height */
+      object-fit: cover; /* Ensures the image covers the entire area */
+      transition: transform 0.3s ease;
+      transform: scale(1.4); /* Zoom in more on hover */
+    }
 
-.card:hover .image-frame img {
-  transform: scale(2.5); /* Zoom in more on hover */
-}
+    .card:hover .image-frame img {
+      transform: scale(1.6); /* Zoom in more on hover */
+    }
 
-.card a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #34623F;
-  text-decoration: none;
-}
+    .card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #34623F;
+      text-decoration: none;
+    }
 
-.card a:hover {
-  text-decoration: underline;
-}
+    .card a:hover {
+      text-decoration: underline;
+    }
 
 
   </style>
@@ -137,7 +138,7 @@
         <h3>Christian Concha Silbiger</h3>
         <h5>Grundare & Direktör</h5>
         <div class="image-frame">
-          <img src="../images/christian-silbiger.jpg" alt="Image of Christian Silbiger">
+          <img src="../images/christian-silbiger.jpg" alt="Image of Christian Silbiger" class="christian-silbiger">
         </div>
         <p>"*Stönljud*" - Vår grundare Christian.</p>
         <a href="#">Läs mer...</a>
@@ -147,7 +148,7 @@
         <h3>Felix Misha Luka Magnusson</h3>
         <h5>VD & Medgrundare</h5>
         <div class="image-frame">
-          <img src="../images/misha-magnusson.jpg" alt="Image of Misha Magnusson">
+          <img src="../images/misha-magnusson.jpg" alt="Image of Misha Magnusson" class="misha-magnusson">
         </div>
         <p>Kandidatstudent i datavetenskap vid Uppsala universitet</p>
         <a href="#">Läs mer...</a>
