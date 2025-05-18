@@ -3,7 +3,7 @@ const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
 const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-if (scrollTop > 280) {
+if (scrollTop > 250) {
     if (!nav.classList.contains('stuck')) {
     nav.classList.add('stuck');
     console.log('Added .stuck to nav');

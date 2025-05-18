@@ -2,6 +2,11 @@ html {
     scroll-padding-top: 4rem;
     scroll-behavior: smooth;
   }
+  @media (max-width: 800px) {
+    .nav-wrapper {
+      font-size: 0.5rem !important;
+    }
+  }
   body {
     margin: 0;
     /* background-color: #34623F; */
@@ -32,7 +37,6 @@ html {
     padding-left: 2rem; */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    font-size: 1rem;
     line-height: 1.6;
   }
   nav {
