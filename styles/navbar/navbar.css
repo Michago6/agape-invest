@@ -7,7 +7,7 @@
 }
 
 /* Main nav layout */
-nav a {
+.nav-item {
   text-decoration: none;
   color: inherit;
   font-weight: 500; /* Optional: improves visual balance */
