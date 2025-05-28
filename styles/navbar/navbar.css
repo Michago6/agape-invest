@@ -1,5 +1,4 @@
 
-
 /* Wrapper setup */
 .nav-wrapper {
   width: 100%;
@@ -52,4 +51,18 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+/* Reset styles for links if needed */
+a.no-style {
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0; /* prevent extra space */
+}
+a.no-style:hover {
+  text-decoration: none;
 }

@@ -1,10 +1,10 @@
 
-.nav-language {
+.nav-contact {
   position: relative;
   z-index: 1002;
 }
 
-.language-dropdown {
+.contact-dropdown {
   position: relative;
   display: inline-block;
   z-index: 1002; /* above fixed dropdown */
@@ -12,7 +12,7 @@
 
 
 /* Dropdown menu */
-.language-menu {
+.contact-menu {
   display: none;
   position: fixed;
   top: 90px;
@@ -26,19 +26,19 @@
 
 
 /* Show on hover */
-.language-dropdown:hover .language-menu {
+.contact-dropdown:hover .contact-menu {
   display: flex;
   justify-content: center;
 }
 
-.language-menu .language-list {
+.contact-menu .contact-list {
   display: flex;
   gap: 2rem;
   width: auto;
 }
 
 /* Dropdown links */
-.language-menu .language-list a {
+.contact-menu .contact-list a {
   flex: 1; /* all a's get equal width */
   min-width: 0;
   display: flex;
@@ -52,13 +52,13 @@
 }
 
 /* Underline only on hover */
-.language-menu a:hover {
+.contact-menu a:hover {
   text-decoration: underline;
   background-color: transparent; /* optional: remove gray background */
 }
 
 
-.language-link {
+.contact-link {
   position: relative;
   display: inline-block;
   color: inherit;
@@ -67,7 +67,7 @@
 }
 
 /* Position the image behind the text */
-.language-link .lang-bg {
+.contact-link .lang-bg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -79,7 +79,7 @@
   pointer-events: none; /* let text be clickable */
 }
 
-.language-menu .language-list {
+.contact-menu .contact-list {
   display: flex;
   gap: 2rem;
 }
