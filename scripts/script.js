@@ -35,15 +35,16 @@ if (scrollTop > 250) {
 // });
 
 //seed
-const img = document.getElementById('seed-img');
-const maxHeight = 90; // max height in px
-const scrollThreshold = 300; // max scroll to reach full height
 
-window.addEventListener('scroll', () => {
-  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+// const img = document.getElementById('seed-img');
+// const maxHeight = 90; // max height in px
+// const scrollThreshold = 300; // max scroll to reach full height
+
+// window.addEventListener('scroll', () => {
+//   let scrollTop = window.scrollY || document.documentElement.scrollTop;
   
-  // Calculate new height proportionally (clamp between 0 and maxHeight)
-  let newHeight = Math.min(maxHeight, (scrollTop / scrollThreshold) * maxHeight);
+//   // Calculate new height proportionally (clamp between 0 and maxHeight)
+//   let newHeight = Math.min(maxHeight, (scrollTop / scrollThreshold) * maxHeight);
   
-  img.style.height = newHeight + 'px';
-});
+//   img.style.height = newHeight + 'px';
+// });
