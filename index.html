@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/jpeg" href="images/ai.jpeg">
     <title>Agape Invest</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/navbar/navbar.css">
+    <link rel="stylesheet" href="styles/navbar/language.css">
   </head>
   <body>
     <!--<header>Agape Invest</header>-->
@@ -26,21 +28,38 @@
           <div class="language-dropdown">
             <a href="#language" class="language-link"> <img src="images/language.png" alt="Globe Icon" class="lang-bg"> Language</a>
             <div class="language-menu">
-              <a href="">English</a>
-              <a href="">Swedish</a>
-              <a href="">French</a>
-              <a href="">German</a>
+              <div class="language-list">
+                <a href="">English</a>
+                <a href="">Swedish</a>
+                <a href="">French</a>
+                <a href="">German</a>
+              </div>
             </div>
           </div>
         </div>
       </nav>
     </div>
 
+
+
     <div id="home" class="header-wrapper">
       <img src="images/agape.png" class="image left">
       <img src="images/seed.png" class="image center">
       <img src="images/invest.png" class="image right">
     </div>
+
+    <!-- Centered red line! -->
+    <div style="
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100vh;
+      background-color: rgba(255, 0, 0, 0.8);
+      z-index: 9999;
+      pointer-events: none;
+    "></div>
 
     <div class="content-box">
       <h1 id="about"> About Us</h1>
