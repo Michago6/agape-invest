@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles/navbar/navbar.css">
     <link rel="stylesheet" href="styles/navbar/dropdown.css">
     <link rel="stylesheet" href="styles/navbar/language.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/footer.css">
   </head>
   <body>
     <!--<header>Agape Invest</header>-->
@@ -49,6 +51,7 @@
               <div class="menu">
                 <div class="list">
                   <a href="">The team</a>
+                  <a href="">Our subsidiaries</a>
                   <a href="">Our partners</a>
                 </div>
               </div>
@@ -73,13 +76,14 @@
         <div class="nav-language">
           <div class="dropdown">
 
-            <a href="#language" class="language-link"> <img src="images/language.png" alt="Globe Icon" class="lang-bg"> Language</a>
+            <a href="javascript:void(0);" class="language-link"> <img src="images/language.png" alt="Globe Icon" class="lang-bg"> Language</a>
             <div class="menu">
               <div class="list">
                 <a href="">English</a>
                 <a href="">Swedish</a>
                 <a href="">French</a>
                 <a href="">German</a>
+                <a href="">Spanish</a>
               </div>
             </div>
 
@@ -90,11 +94,20 @@
 
 
 
+    <!--
     <div id="home" class="header-wrapper">
       <img src="images/agape.png" class="image left">
       <img src="images/seed.png" class="image center">
       <img src="images/invest.png" class="image right">
     </div>
+    -->
+    <section id="home" class="hero">
+      <!-- <img src="images/seed.png" class="hero-bg" id="hero-bg" alt="Background Image" /> -->
+      <div class="hero-content">
+        <h1>Welcome to Agape Invest</h1>
+        <p>Empowering ideas to become global movements.</p>
+      </div>
+    </section>
 
     <!-- Centered red line! -->
     <!--
@@ -308,5 +321,25 @@
     </div>
 
     <script src="scripts/script.js"></script>
+
+    <footer class="footer">
+
+      <div class="footer-bar">
+        <div class="footer-logo">
+          <img src="images/seed.png" height="80px">
+          <img src="images/ai.jpeg" height="60px">
+        </div>
+
+        <a href="https://www.linkedin.com/company/agape-invest/" target="_blank" class="linkedin-icon" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 34 34" fill="white">
+            <rect width="34" height="34" rx="4" fill="black"/>
+            <path d="M8.118 13.882H12.057V25.5H8.118V13.882ZM10.088 9.5C11.26 9.5 12.2 10.452 12.2 11.635C12.2 12.818 11.26 13.765 10.088 13.765C8.915 13.765 7.976 12.818 7.976 11.635C7.976 10.452 8.915 9.5 10.088 9.5ZM14.44 13.882H18.17V15.378H18.224C18.742 14.42 20.004 13.412 21.787 13.412C25.444 13.412 25.999 15.782 25.999 19.112V25.5H22.06V19.843C22.06 18.155 22.02 15.975 19.97 15.975C17.88 15.975 17.582 17.628 17.582 19.729V25.5H14.44V13.882Z" fill="white"/>
+          </svg>
+        </a>
+      </div>
+
+      <hr class="footer-line" />
+      <p class="footer-text">Est. 2025</p>
+    </footer>
   </body>
 </html>

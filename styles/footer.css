@@ -1,0 +1,45 @@
+.footer {
+  background-color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer-line {
+  border: none;
+  height: 2px;
+  background-color: black;
+  width: 80%;
+  margin: 0 auto 2rem;
+  margin-top: 3rem;
+}
+
+.footer-text {
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.footer-bar {
+  width: 80%;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* linkedIn */
+.linkedin-icon {
+  display: inline-block;
+  margin-top: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.linkedin-icon:hover {
+  transform: scale(1.1);
+}

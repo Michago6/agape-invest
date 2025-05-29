@@ -48,3 +48,12 @@ if (scrollTop > 250) {
   
 //   img.style.height = newHeight + 'px';
 // });
+
+
+// Rotate background on scroll
+// const bg = document.getElementById('hero-bg');
+// window.addEventListener('scroll', () => {
+//   const scrollY = window.scrollY;
+//   const rotation = scrollY * 0.05; // Adjust rotation speed
+//   bg.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+// });
