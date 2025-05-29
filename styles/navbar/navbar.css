@@ -10,11 +10,13 @@
 .nav-item {
   text-decoration: none;
   color: inherit;
-  font-weight: 500; /* Optional: improves visual balance */
+  font-weight: 500;
   height: 90px;
-  line-height: 90px; /* vertically center text */
+  line-height: 90px;
   display: inline-block;
+  white-space: nowrap; /* 🔒 prevent text wrap */
 }
+
 
 /* Nav links in the center of 75% of the screen */
 
@@ -32,6 +34,7 @@ a.no-style {
   align-items: center;
   gap: 0; /* prevent extra space */
 }
+
 a.no-style:hover {
   text-decoration: none;
 }
@@ -53,6 +56,14 @@ a.no-style:hover {
   padding: 0 2rem;
 }
 
+.nav-logo {
+  width: 8vw;              /* Responsive width relative to viewport */
+  max-width: 80px;         /* Optional: limit max size */
+  height: auto;            /* Maintain aspect ratio */
+  object-fit: contain;     /* Keeps image proportional */
+}
+
+
 /* Each section: left, center, right */
 .nav-images,
 .nav-links,
@@ -67,6 +78,8 @@ a.no-style:hover {
 .nav-links {
   justify-content: center;
   gap: 2rem;
+  margin-left: -1rem; /* shift the entire group 1rem to the left */
+
 }
 
 /* Align images to the left */

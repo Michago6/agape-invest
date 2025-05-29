@@ -21,3 +21,23 @@
   opacity: 0.2;  /* optional: semi-transparent */
   pointer-events: none; /* let text be clickable */
 }
+
+/* flags */
+
+.list a {
+  display: flex;
+  flex-direction: column;    /* Stack vertically */
+  align-items: center;       /* Center text and image */
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  gap: 0.25rem;
+}
+
+.flag-bg {
+  width: 3rem;      /* smaller width */
+  height: auto;     /* maintain aspect ratio */
+}

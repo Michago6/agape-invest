@@ -1,0 +1,41 @@
+.our-team {
+  background-color: white;
+  height: 100vh;       /* ⬅️ full viewport height */
+  padding: 4rem 2rem;
+  display: flex;       /* ⬇️ optional: center content */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  overflow-x: hidden;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: start;
+}
+
+.image-frame {
+  position: relative;
+  width: 50%; /* Image will take up 50% of the card's width */
+  height: 60%; /* Image will take up 60% of the card's height */
+  overflow: hidden; /* Ensures the zoomed part of the image gets clipped */
+  display: flex;
+  justify-content: center; /* Horizontally centers the image */
+  align-items: center; /* Vertically centers the image */
+  margin: 0 auto; /* Ensure the image-frame itself is centered within the card */
+}
+
+.card {
+  aspect-ratio: 1 / 1;                 /* Keeps the card square */
+  background-color: rgb(243, 180, 180);
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 8px;
+  max-height: 30rem;
+}
