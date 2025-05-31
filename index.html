@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="styles/navbar/language.css">
     <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/our-team.css">
+    <link rel="stylesheet" href="styles/our-team/our-team.css">
+    <link rel="stylesheet" href="styles/our-team/videos.css">
+    <link rel="stylesheet" href="styles/our-team/our-subsidiaries.css">
   </head>
   <body>
     <!--<header>Agape Invest</header>-->
@@ -47,7 +49,7 @@
               <div class="menu">
                 <div class="list">
                   <a href="#meet-the-team">Meet the team</a>
-                  <a href="">Our subsidiaries</a>
+                  <a href="#our-subsidiaries">Our subsidiaries</a>
                   <a href="">Our partners</a>
                 </div>
               </div>
@@ -209,8 +211,6 @@
 
     </div>
     <section id="our-team">
-    
-    
 
       <br><br>
       <section id="meet-the-team">
@@ -218,14 +218,16 @@
         <div class="team-container">
           <div class="team-member">
             <div class="video-wrapper">
-              <iframe 
-                src="https://www.youtube.com/embed/C7T8dcr-il0?rel=0&modestbranding=1&showinfo=0" 
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-              </iframe>
+
+              <div class="video-hover-wrapper" data-video-id="C7T8dcr-il0">
+                <div class="video-placeholder" style="background-image: url('https://img.youtube.com/vi/C7T8dcr-il0/maxresdefault.jpg');">
+                  <div class="play-icon-circle">
+                    <div class="play-triangle"></div>
+                  </div>
+                </div>
+              </div>
             </div>
+
             <p>Meet Misha</p>
             <a 
               href="https://www.linkedin.com/in/misha-magnusson/" 
@@ -237,13 +239,17 @@
           </div>
           <div class="team-member">
             <div class="video-wrapper">
-              <iframe 
-                src="https://www.youtube.com/embed/n7OD3JF3KKk?rel=0&modestbranding=1&showinfo=0" 
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-              </iframe>
+
+              <div class="video-hover-wrapper" data-video-id="n7OD3JF3KKk">
+                <div class="video-placeholder" style="background-image: url('https://img.youtube.com/vi/n7OD3JF3KKk/maxresdefault.jpg');">
+                  <div class="play-icon-circle">
+                    <div class="play-triangle"></div>
+                  </div>
+                </div>
+              </div>
+
+              
+
             </div>
             <p>Meet Christian</p>
             <a 
@@ -256,6 +262,14 @@
           </div>
         </div>
       </section>
+
+      <hr class="tray-divider" />
+
+      <section id="our-subsidiaries" class="centered-subsidiaries-section">
+        <h2>Our Subsidiaries</h2>
+        <p>Details about our subsidiaries go here...</p>
+      </section>
+
 
 
     </section>
@@ -275,6 +289,7 @@
 
     <script src="scripts/script.js"></script>
     <script src="scripts/highlight-on-click.js"></script>
+    <script src="scripts/video-thumnails.js"></script>
 
     <footer class="footer">
 
