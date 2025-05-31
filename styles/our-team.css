@@ -1,41 +1,87 @@
-.our-team {
+#meet-the-team {
   background-color: white;
-  height: 100vh;       /* ⬅️ full viewport height */
-  padding: 4rem 2rem;
-  display: flex;       /* ⬇️ optional: center content */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 40px 0;
+}
+
+.team-container {
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding-top: 5rem;
+  padding-bottom: 15rem;
+}
+
+.team-member {
   text-align: center;
-  color: black;
-  overflow-x: hidden;
 }
 
-.card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: start;
+.team-member iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
 }
 
-.image-frame {
+.team-member p {
+  margin: 10px 5px 15px 5px; /* adds more space below the paragraph */
+  font-weight: bold;
+}
+
+.linkedin-button {
+  border: 1px solid gray;
+  background: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.linkedin-button:hover {
+  background-color: #f0f0f0;
+}
+
+.video-wrapper {
   position: relative;
-  width: 50%; /* Image will take up 50% of the card's width */
-  height: 60%; /* Image will take up 60% of the card's height */
-  overflow: hidden; /* Ensures the zoomed part of the image gets clipped */
-  display: flex;
-  justify-content: center; /* Horizontally centers the image */
-  align-items: center; /* Vertically centers the image */
-  margin: 0 auto; /* Ensure the image-frame itself is centered within the card */
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
+  overflow: hidden;
 }
 
-.card {
-  aspect-ratio: 1 / 1;                 /* Keeps the card square */
-  background-color: rgb(243, 180, 180);
-  padding: 1rem;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  box-sizing: border-box;
-  text-align: center;
-  border-radius: 8px;
-  max-height: 30rem;
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* video thumbnail overlay */
+.video-hover-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.video-placeholder {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.3s ease;
+}
+
+.video-hover-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: none;
 }
