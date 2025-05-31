@@ -1,10 +1,3 @@
-.tray-divider {
-  width: 80vw;
-  margin: 40px auto;
-  border: none;
-  border-top: 1px solid #ccc; /* thin gray line */
-}
-
 .centered-subsidiaries-section {
   text-align: center;
   width: 80vw;
