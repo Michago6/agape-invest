@@ -1,6 +1,16 @@
 #our-team {
   background-color: white;
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 400px;
+}
+
+#our-team h1 {
+  margin-left: 10%;
+  font-size: 3rem;
+}
+
+.our-team-paragraph {
+  margin-left: 10%;
 }
 
 .team-container {
@@ -9,8 +19,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  padding-top: 5rem;
-  padding-bottom: 15rem;
+  padding-bottom: 120px;
 }
 
 .team-member {
@@ -19,7 +28,6 @@
 
 .team-member iframe {
   width: 100%;
-  height: 200px;
   border: none;
 }
 
@@ -28,7 +36,16 @@
   font-weight: bold;
 }
 
-.linkedin-button {
+.tray-divider {
+  width: 80vw;
+  margin: 40px auto;
+  border: none;
+  border-top: 1px solid #ccc; /* thin gray line */
+}
+
+/* likedin buttons */
+
+.my-linkedin-button {
   border: 1px solid gray;
   background: none;
   padding: 8px 16px;
@@ -38,13 +55,6 @@
   color: inherit;
 }
 
-.linkedin-button:hover {
+.my-linkedin-button:hover {
   background-color: #f0f0f0;
-}
-
-.tray-divider {
-  width: 80vw;
-  margin: 40px auto;
-  border: none;
-  border-top: 1px solid #ccc; /* thin gray line */
 }

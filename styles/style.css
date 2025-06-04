@@ -40,48 +40,6 @@ body {
 }
 /*cards */
 
-.flag-card {
-  flex: 1 1 calc(33.333% - 1rem);
-  background-color: white;
-  padding: 1rem;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  box-sizing: border-box;
-  text-align: center;
-  border-radius: 8px;
-}
-.selected-flag-card {
-  flex: 1 1 calc(33.333% - 1rem);
-  background-color: rgb(255, 255, 255);
-  padding: 1rem;
-  border: solid green;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  box-sizing: border-box;
-  text-align: center;
-  border-radius: 8px;
-}
-
-.card img {
-  width: 100%; /* The image will take up 100% of the image-frame */
-  height: 100%; /* The image will take up 100% of the image-frame height */
-  object-fit: cover; /* Ensures the image covers the entire area */
-  transition: transform 0.3s ease;
-  transform: scale(1.0); /* Zoom in more on hover */
-}
-
-.card:hover .image-frame img {
-  transform: scale(1.1); /* Zoom in more on hover */
-}
-
-.card a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #34623F;
-  text-decoration: none;
-}
-
-.card a:hover {
-  text-decoration: underline;
-}
 
 
 @keyframes shine {

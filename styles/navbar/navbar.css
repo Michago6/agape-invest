@@ -58,7 +58,6 @@ a.no-style:hover {
 
 .nav-logo {
   width: 8vw;              /* Responsive width relative to viewport */
-  max-width: 80px;         /* Optional: limit max size */
   height: auto;            /* Maintain aspect ratio */
   object-fit: contain;     /* Keeps image proportional */
 }

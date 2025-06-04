@@ -1,6 +1,61 @@
-.centered-subsidiaries-section {
-  text-align: center;
+.subsidiaries-container {
   width: 80vw;
   margin: 0 auto;
-  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 120px;
+}
+
+.subsidiary-member {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 20px;
+  width: 80vw;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.subsidiary-member h2 {
+  margin-bottom: 20px;
+}
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.profile-image {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.subsidiary-member p {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.linkedin-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0a66c2;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.linkedin-button:hover {
+  background-color: #004182;
 }

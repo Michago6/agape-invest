@@ -1,0 +1,47 @@
+/* Banner Section */
+#contact-banner {
+  background-image: url("../../images/uppsala.jpeg");
+  background-size: cover;
+  background-position: center -575px;
+  align-content: center ;
+  width: 100%;
+  height: 500px;
+}
+
+#contact-banner h1 {
+  font-size: 90px;
+  color: white;
+  margin-left: 10%;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* optional for readability */
+}
+
+/* Contact Content Section */
+#contact {
+  background-color: white;
+  padding: 60px 0;
+}
+
+.contact-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: black;
+}
+
+#contact h2 {
+  font-size: 60px;
+}
+
+.contact-person {
+  margin-bottom: 20px;
+}
+
+#contact a {
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
