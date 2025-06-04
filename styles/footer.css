@@ -29,8 +29,17 @@
 }
 
 .footer-logo {
-  height: 40px;
   object-fit: contain;
+}
+
+.footer-logo img {
+  height: 80px;
+}
+
+@media (max-width: 768px) {
+  .footer-logo img {
+    height: 60px;
+  }
 }
 
 /* linkedIn */

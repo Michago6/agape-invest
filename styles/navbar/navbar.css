@@ -1,4 +1,3 @@
-
 /* Wrapper setup */
 .nav-wrapper {
   width: 100%;
@@ -91,4 +90,29 @@ a.no-style:hover {
 .nav-language {
   justify-content: flex-end;
   gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .nav-wrapper, 
+  .nav-links a,
+  .nav-item,
+  .language-link,
+  .menu .list a {
+    font-size: 0.9rem !important;  /* override any mobile-downsizing rules */
+  }
+  /* Reduce horizontal padding in the fixed nav bar */
+  #nav {
+    padding: 0 0.5rem;
+  }
+
+  /* Optional: reduce gap between nav links */
+  .nav-links {
+    gap: 1rem;
+    margin-left: 0; /* reset margin shift */
+  }
+
+  /* Optional: reduce image size slightly */
+  .nav-logo {
+    width: 20vw;
+  }
 }

@@ -15,6 +15,20 @@
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* optional for readability */
 }
 
+@media (max-width: 768px) {
+  #contact-banner {
+    height: 200px; /* smaller height on mobile */
+    background-position: center -90px; /* optional: adjust for image framing */
+  }
+
+  #contact-banner h1 {
+    font-size: 48px; /* smaller font on mobile */
+  }
+  #contact h2 {
+    font-size: 28px; /* smaller font on mobile */
+  }
+}
+
 /* Contact Content Section */
 #contact {
   background-color: white;
@@ -31,6 +45,12 @@
 
 #contact h2 {
   font-size: 60px;
+}
+
+@media (max-width: 768px) {
+  #contact h2 {
+    font-size: 28px; /* smaller font on mobile */
+  }
 }
 
 .contact-person {

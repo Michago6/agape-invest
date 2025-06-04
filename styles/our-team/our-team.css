@@ -17,9 +17,15 @@
   width: 80vw;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* default: 2 columns */
   gap: 40px;
   padding-bottom: 120px;
+}
+
+@media (max-width: 768px) {
+  .team-container {
+    grid-template-columns: 1fr; /* switch to 1 column on narrow screens */
+  }
 }
 
 .team-member {

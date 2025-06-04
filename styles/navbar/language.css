@@ -41,3 +41,11 @@
   width: 3rem;      /* smaller width */
   height: auto;     /* maintain aspect ratio */
 }
+
+
+@media (max-width: 768px) {
+  .list a {
+    width: 2.5rem;
+    padding: 0.25rem;
+  }
+}
