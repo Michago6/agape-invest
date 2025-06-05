@@ -48,9 +48,9 @@
 
 /* On mobile: Never show dropdown */
 @media (max-width: 768px) {
-  .dropdown:hover .menu {
+  /* .dropdown:hover .menu {
     display: none !important;
-  }
+  } */
 }
 
 /* easier to hover language */
@@ -79,6 +79,9 @@
   color: black;
   white-space: normal;        /* ✅ allow line-breaks */
   flex: unset;                /* ✅ removes stretch behavior */
+  
+  word-break: normal;         /* ✅ Prevent breaking within words */
+  overflow-wrap: normal;      /* ✅ Prevent breaking long words */
 }
 
 /* Underline only on hover */

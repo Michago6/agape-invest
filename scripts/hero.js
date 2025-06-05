@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
       span.textContent = word;
       span.classList.add("word");
       line.appendChild(span);
-      line.appendChild(cursor); // Move cursor after the current word
     }, i * delay);
   });
 });

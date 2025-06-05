@@ -6,6 +6,10 @@
   height: 90px;
   line-height: 90px; /* vertically center text */
   display: inline-block;
+
+  padding: 0 0.5rem;       /* ✅ Add padding for touch */
+  position: relative;      /* ✅ Needed for absolute image positioning */
+  z-index: 1;              /* ✅ Ensure it stays above background elements */
 }
 
 /* Position the image behind the text */
@@ -49,7 +53,7 @@
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .language-link {
     font-size: 1px;
   }
@@ -58,4 +62,4 @@
     width: 1px;
     height: 1px;
   }
-}
+} */

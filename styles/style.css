@@ -2,11 +2,6 @@ html {
   scroll-padding-top: 19rem;
   scroll-behavior: smooth;
 }
-@media (max-width: 800px) {
-  .nav-wrapper {
-    font-size: 0.4rem !important;
-  }
-}
 body {
   margin: 0;
   /* background-color: #34623F; */
@@ -37,6 +32,10 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   font-size: 1rem;
   line-height: 1.6;
+
+  white-space: normal;           /* ✅ allow wrapping */
+  word-break: break-word;        /* ✅ break long words */
+  overflow-wrap: break-word;     /* ✅ broader support */
 }
 
 @media (max-width: 768px) {

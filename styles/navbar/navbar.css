@@ -12,9 +12,25 @@
   color: inherit;
   font-weight: 500;
   height: 90px;
-  line-height: 90px;
-  display: inline-block;
-  white-space: nowrap; /* 🔒 prevent text wrap */
+  /* line-height: 90px; */
+  /* background-color: red; */
+  display: flex;
+  align-items: center;           /* ✅ vertical centering */
+  text-align: center;
+  white-space: normal; /* ✅ allow wrapping */
+  word-break: break-word; /* ✅ break long words if needed */
+  /* background-color: yellow; */
+
+  flex: 0 1 auto;        /* ✅ allow shrinking */
+  min-width: 0;          /* ✅ required inside flex to shrink below content size */
+}
+
+@media (max-width: 768px) {
+  .nav-item {
+    font-size: 0.75rem;      /* ✅ smaller font on small screens */
+    max-width: 15vw;        /* ✅ limit width */
+    padding: 0 0.01rem;      /* ✅ tighter padding */
+  }
 }
 
 
@@ -57,9 +73,11 @@ a.no-style:hover {
 }
 
 .nav-logo {
-  width: 110px;              /* Responsive width relative to viewport */
+  /* background-color: red; */
+  width: 120px;
   height: auto;            /* Maintain aspect ratio */
-  object-fit: contain;     /* Keeps image proportional */
+  object-fit: contain;
+
 }
 
 /* Default: show desktop, hide mobile */
@@ -85,17 +103,15 @@ a.no-style:hover {
 .nav-images,
 .nav-links,
 .nav-language {
-  flex: 1 1 0;
   display: flex;
   align-items: center;
-  /* border:solid black; */
 }
 
 /* Center the nav links */
 .nav-links {
   justify-content: center;
   gap: 2rem;
-  margin-left: -1rem; /* shift the entire group 1rem to the left */
+  /* margin-left: -1rem; */
 }
 
 /* Align images to the left */
@@ -121,12 +137,22 @@ a.no-style:hover {
   /* Reduce horizontal padding in the fixed nav bar */
   #nav {
     padding: 0 0.5rem;
+    justify-content: space-evenly !important; /* ✅ more balanced for tight layouts */
   }
 
   /* Optional: reduce gap between nav links */
   .nav-links {
+    /* background-color: green; */
     gap: 1rem;
-    margin-left: 0; /* reset margin shift */
+    overflow-wrap: anywhere;     /* ✅ break at any point if needed */
+    text-align: center;
+    min-width: 0;                /* ✅ critical for flex containers */
+    flex: 0 1 auto;              /* ✅ allow shrinking */
+  }
+
+  .nav-links a {
+    white-space: normal;         /* ✅ allow wrapping */
+    word-break: break-word;      /* ✅ break long words */
   }
 
   /* Optional: reduce image size slightly */
