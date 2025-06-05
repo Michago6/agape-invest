@@ -7,6 +7,7 @@
 
 /* Main nav layout */
 .nav-item {
+  font-size: 0.9rem;
   text-decoration: none;
   color: inherit;
   font-weight: 500;
@@ -56,9 +57,27 @@ a.no-style:hover {
 }
 
 .nav-logo {
-  width: 8vw;              /* Responsive width relative to viewport */
+  width: 110px;              /* Responsive width relative to viewport */
   height: auto;            /* Maintain aspect ratio */
   object-fit: contain;     /* Keeps image proportional */
+}
+
+/* Default: show desktop, hide mobile */
+.desktop-only {
+  display: block;
+}
+.mobile-only {
+  display: none;
+}
+
+/* On small screens: show mobile, hide desktop */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
 }
 
 
@@ -77,7 +96,6 @@ a.no-style:hover {
   justify-content: center;
   gap: 2rem;
   margin-left: -1rem; /* shift the entire group 1rem to the left */
-
 }
 
 /* Align images to the left */
@@ -113,6 +131,6 @@ a.no-style:hover {
 
   /* Optional: reduce image size slightly */
   .nav-logo {
-    width: 20vw;
+    width: 50px;
   }
 }

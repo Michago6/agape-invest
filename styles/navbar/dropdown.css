@@ -45,6 +45,14 @@
   display: flex;
   justify-content: center;
 }
+
+/* On mobile: Never show dropdown */
+@media (max-width: 768px) {
+  .dropdown:hover .menu {
+    display: none !important;
+  }
+}
+
 /* easier to hover language */
 .nav-language:hover .menu {
   display: flex;
